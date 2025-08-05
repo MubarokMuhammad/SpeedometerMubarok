@@ -27,9 +27,10 @@ struct SpeedometerConstants {
     struct Dimensions {
         static let outerCircleSize: CGFloat = 328
         static let innerCircleSize: CGFloat = 309
+        static let progressCircleSize: CGFloat = 318.5
         static let centerHubSize: CGFloat = 62
         static let needleHubSize: CGFloat = 8
-        static let progressLineWidth: CGFloat = 12
+        static let progressLineWidth: CGFloat = 9.5
         static let needleLineWidth: CGFloat = 5
         static let needleLength: CGFloat = 120
         static let valueDisplayOffset: CGFloat = 88

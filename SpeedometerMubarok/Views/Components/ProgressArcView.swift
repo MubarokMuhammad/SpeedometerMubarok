@@ -18,7 +18,7 @@ struct ProgressArcView: View {
                 constants.Colors.progressBlue,
                 style: StrokeStyle(lineWidth: constants.Dimensions.progressLineWidth, lineCap: .round)
             )
-            .frame(width: constants.Dimensions.outerCircleSize, height: constants.Dimensions.outerCircleSize)
+            .frame(width: constants.Dimensions.progressCircleSize, height: constants.Dimensions.progressCircleSize)
             .rotationEffect(.degrees(constants.Values.progressStartAngle))
     }
 }

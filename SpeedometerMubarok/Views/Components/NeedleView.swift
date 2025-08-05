@@ -13,12 +13,11 @@ struct NeedleView: View {
     
     var body: some View {
         ZStack {
-            Path { path in
-                path.move(to: CGPoint(x: constants.Values.centerX, y: constants.Values.centerY))
-                path.addLine(to: CGPoint(x: constants.Values.centerX, y: constants.Values.centerY - constants.Dimensions.needleLength))
-            }
-            .stroke(constants.Colors.needleColor, lineWidth: constants.Dimensions.needleLineWidth)
-            .rotationEffect(.degrees(angle), anchor: UnitPoint(x: 0.5, y: 0.5))
+            Capsule()
+                .fill(constants.Colors.needleColor)
+                .frame(width: constants.Dimensions.needleLineWidth, height: constants.Dimensions.needleLength - constants.Dimensions.needleHubSize / 2)
+                .offset(y: -(constants.Dimensions.needleLength - constants.Dimensions.needleHubSize / 2) / 2 - constants.Dimensions.needleHubSize / 2)
+                .rotationEffect(.degrees(angle), anchor: .center)
             
             Circle()
                 .fill(constants.Colors.centerHub)

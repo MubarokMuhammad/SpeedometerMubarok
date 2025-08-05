@@ -80,7 +80,7 @@ Utils/
 ## Usage
 
 1. Enter speed value in the text field (0-100,000+)
-2. Press the "GO" button to update speedometer
+2. Press the "Submit" button to update speedometer
 3. Watch needle and progress arc animate smoothly
 4. Number labels automatically format (15.2k, 50k, etc.)
 
